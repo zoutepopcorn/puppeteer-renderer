@@ -1,6 +1,6 @@
 FROM zenato/puppeteer
 
-COPY . /app
+COPY . /home
 
 RUN cd /app && npm install
 
@@ -8,6 +8,6 @@ VOLUME /home/popcorn/docker
 
 EXPOSE 3000
 
-WORKDIR /app
+WORKDIR /home
 
 CMD npm run start
